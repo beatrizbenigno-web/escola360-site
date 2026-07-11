@@ -1,66 +1,72 @@
 
+/* ===== SEÇÃO 1 - HOME E CABEÇALHO DAS PÁGINAS DO CABEÇALHO ===== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #16305c;
-  background-color: #fff;
+  background-color: rgba(235, 228, 228, 0.877);
 }
 
 .cabecalho {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #e0e0e0;
+    background-color: white;
+    color: rgba(235, 228, 228, 0.877);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: bold;
+.cabecalho a:link {
+    color:rgb(3, 3, 90);
+    text-decoration: none; 
 }
 
-.logo-icone {
-  font-size: 1.6rem;
+.cabecalho a:visited{
+    color: rgb(3, 3, 90);
 }
 
-.menu {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
+.cabecalho a:hover{
+    color: darkblue;
+    text-decoration: underline;
 }
 
-.menu a {
-  text-decoration: none;
-  color: #16305c;
-  font-size: 0.9rem;
+.cabecalho a:active{
+    color: violet;
 }
 
-
-.destaque {
-  text-align: center;
-  padding: 5rem 1rem;
-  background-color: #f7f4ef;
+.logo{
+    
+    color: rgb(3, 3, 90);
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
 }
 
-.destaque h1 {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
+.cabecalho-nav{
+    list-style: none;
+    font-size: 1rem;
+    display: flex;
+    gap: 25px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.destaque p {
-  max-width: 520px;
-  margin: 0 auto 2rem;
-  color: #475467;
-  line-height: 1.6;
-}
+/* ===== FIM - SEÇÃO 1 ===== */
+
+
+
 
 .botao {
   display: inline-block;
