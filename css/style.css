@@ -1,5 +1,5 @@
 
-/* ===== SEÇÃO 1 - HOME E CABEÇALHO DAS PÁGINAS DO CABEÇALHO ===== */
+/* HOME E CABEÇALHO DAS PÁGINAS DO CABEÇALHO */
 
 * {
   margin: 0;
@@ -62,11 +62,6 @@ body {
     font-weight: bold;
     text-decoration: none;
 }
-
-/* ===== FIM - SEÇÃO 1 ===== */
-
-
-
 
 .botao {
   display: inline-block;
