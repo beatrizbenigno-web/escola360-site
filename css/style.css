@@ -91,7 +91,6 @@ main{
   flex: 1;
 }
 
-
 .botao {
   display: inline-block;
   background-color: #16305c;
@@ -142,19 +141,27 @@ main{
   margin-bottom: 3rem;
 }
 
-/* Cards */
+/* Cards - Area Alterada*/
 .cards {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
 }
 
 .card {
-  flex: 1;
-  min-width: 260px;
+  flex: 1 1 25rem;
+  min-width: 25rem;
   border: 1px solid #eaecf0;
   border-radius: 12px;
   padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  background-color: #ffffff;
 }
 
 .card h2 {
@@ -168,14 +175,27 @@ main{
   line-height: 1.5;
 }
 
+.image {
+  width: 100%;           
+  max-width: 25rem;      
+  height: auto;          
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.titulo-cards {
+  margin-bottom: 0.5rem;
+}
+
+.funcionalidades-recursos h2 {
+  padding: 1rem;
+  text-align: center;
+}
+
 .thumb {
   height: 150px;
   border-radius: 10px;
 }
-
-.verde   { background-color: #d4efd4; }
-.azul    { background-color: #dbe9ff; }
-.laranja { background-color: #fbe4c4; }
 
 
 /* ====== FORMULÁRIO DE LOGIN ====== */
@@ -196,4 +216,55 @@ main{
     width: 100%;
     max-width: 380px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries - Responsividade (Apenas Cards)*/
+
+/* TABLETS E TELAS MÉDIAS (Até 768px) */
+@media (max-width: 768px) {
+  
+  /* Cards /*
+  /* Reduz o tamanho dos títulos principais */
+  .funcionalidades h1 {
+    font-size: 2rem;
+  }
+
+  /* Ajusta o espaçamento interno das seções principais */
+  .funcionalidades, .home {
+    padding: 2.5rem 1rem;
+  }
+
+  .funcionalidades-recursos {
+    text-align: center;
+  }
+  
+  .cards {
+    min-width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* CELULARES E DISPOSITIVOS MÓVEIS (Até 480px) */
+@media (max-width: 480px) {
+
+  
+  /* Cards /*   
+  /* Reduz ainda mais o tamanho do título principal em celulares */
+  .funcionalidades h1 {
+    font-size: 1.6rem;
+  }
+
+  .funcionalidades-recursos {
+    text-align: center;
+  }
+
+  .cards {
+    padding: 1rem;
+  }
+
+  .titulo-cards {
+    margin-bottom: 0.5rem;
+  }
+  
+ 
 }
