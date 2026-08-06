@@ -219,6 +219,28 @@ main{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Pagina - Sobre Nós */
+
+.image-sobre-nós {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.titulo-sobre-nós {
+    color: rgb(3, 3, 90);
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.texto-sobre-nós {
+    text-align: center;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+
 /* Media Queries - Responsividade (Apenas Cards)*/
 
 /* TABLETS E TELAS MÉDIAS (Até 768px) */
