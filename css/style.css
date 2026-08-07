@@ -38,6 +38,21 @@ footer {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;   
+    gap: 15px;               
+    padding: 15px 20px;      
+  }
+
+  .cabecalho nav, .cabecalho ul { 
+    display: flex;
+    flex-wrap: wrap;         
+    justify-content: center; 
+    gap: 15px;               
+  }
+}
+
 /* Configurações dos links do Menu NAV*/
 .cabecalho a:link {
     color:rgb(3, 3, 90);
