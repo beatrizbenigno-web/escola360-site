@@ -199,9 +199,17 @@ main{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
+.entrar button{  
+  display: block;     
+  background-color: #16305c;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: medium;
+  color: #ffffff;
+  border: #ffffff;
+  cursor: pointer;
+  margin: 0 auto;
+}
 
 /* Pagina - Sobre Nós */
 
