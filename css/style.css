@@ -208,6 +208,7 @@ main{
 .login-card {
     background-color: white;
     padding: 30px;
+    padding-top: 50px;
     border-radius: 10px; 
     width: 100%;
     max-width: 380px;
