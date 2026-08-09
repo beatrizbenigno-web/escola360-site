@@ -123,6 +123,12 @@ a {
   z-index: 1001;
 }
 
+.menu-check {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* ===== CONTEÚDO PRINCIPAL ===== */
 
 .botao {
@@ -429,10 +435,12 @@ footer {
     z-index: 999;
   }
 
-  /* Quando menu está aberto */
-  .cabecalho-nav.ativa {
-    max-height: 500px;
-  }
+ /* Quando o checkbox está marcado, o menu abre / O ~ significa "um elemento irmão que vem depois", então a regra lê-se assim: 
+ quando o checkbox estiver marcado, encontre o nav que vem depois dele e abra a lista lá dentro.*/
+ 
+.menu-check:checked ~ nav .cabecalho-nav {
+  max-height: 500px;
+}
 
   .cabecalho-nav li {
     border-bottom: 1px solid #eaecf0;
