@@ -1,0 +1,192 @@
+﻿GLOSSÁRIO DOS TERMOS USADO NO STYLE.CSS
+
+LAYOUT E CAIXA
+--------------
+margin
+  Espaço FORA do elemento (afasta dos vizinhos).
+
+padding
+  Espaço DENTRO do elemento (afasta o conteúdo da borda).
+
+box-sizing: border-box
+  Largura/altura incluem padding e borda (mais previsível).
+
+width / height / max-width / min-width / min-height
+  Tamanhos e limites do elemento.
+
+display
+  Como o elemento se comporta na página (block, flex, none, etc.).
+
+position
+  Como ele se posiciona (static, relative, absolute, sticky).
+
+top / left / right
+  Deslocamento quando usa position.
+
+z-index
+  "Quem fica por cima" (número maior = na frente).
+
+overflow
+  O que fazer se o conteúdo PASSAR do tamanho (hidden esconde o excesso).
+
+
+FLEXBOX
+-------
+display: flex
+  Organiza os filhos em linha/coluna flexível.
+
+flex-direction
+  Direção dos itens (row = linha, column = coluna).
+
+justify-content
+  Alinhamento no eixo principal (horizontal no row).
+
+align-items
+  Alinhamento no eixo cruzado (vertical no row).
+
+gap
+  Espaço entre os itens.
+
+flex-wrap
+  Se pode quebrar para a linha de baixo.
+
+flex: 1
+  O item cresce para ocupar o espaço sobrando.
+
+margin-top: auto
+  Empurra o elemento para o final (ex.: rodapé).
+
+
+TIPOGRAFIA E TEXTO
+------------------
+font-family
+  Família da fonte.
+
+font-size
+  Tamanho da letra.
+
+font-weight
+  Peso da fonte (negrito etc.).
+
+line-height
+  Altura da linha / espaçamento entre linhas.
+
+letter-spacing
+  Espaço entre letras.
+
+text-align
+  Alinhamento do texto (center, justify...).
+
+text-decoration
+  Sublinhado etc. (none, underline).
+
+color
+  Cor do texto.
+
+
+VISUAL
+------
+background-color
+  Cor de fundo.
+
+border / border-radius / border-top
+  Borda e cantos arredondados.
+
+box-shadow
+  Sombra.
+
+opacity
+  Transparência (0 = invisível, 1 = opaco).
+
+object-fit: cover
+  Imagem preenche o espaço sem deformar (pode cortar).
+
+cursor: pointer
+  Mãozinha no mouse.
+
+
+MOVIMENTO E INTERAÇÃO
+---------------------
+transition
+  Animação suave entre estados.
+
+transform
+  Altera visualmente o elemento.
+
+translateY
+  Move no eixo vertical (ex.: translateY(-2px) = sobe 2px).
+
+:hover
+  Quando o mouse está em cima.
+
+:focus
+  Quando o elemento está selecionado (teclado/clique).
+
+:link / :visited / :active
+  Estados do link (não visitado / já visitado / enquanto clica).
+
+outline / outline-offset
+  Contorno de foco (acessibilidade).
+
+pointer-events: none
+  O elemento não recebe clique.
+
+
+RESPONSIVO E UNIDADES
+---------------------
+clamp(mín, preferido, máx)
+  Tamanho fluido: nunca menor que o mínimo, nunca maior que o máximo.
+
+rem
+  Unidade relativa ao tamanho base da fonte do site.
+
+vw / vh
+  % da largura/altura da tela (100vh = altura da tela).
+
+%
+  Relativo ao elemento pai.
+
+@media
+  Regras só em certas condições (ex.: tela até 768px).
+
+max-width: 768px
+  "Quando a tela for no máximo 768px".
+
+prefers-reduced-motion
+  Se o usuário pediu menos animação nas configurações do sistema.
+
+
+SELETORES E ESPECIALIDADES
+--------------------------
+*
+  Todos os elementos.
+
+. (classe)
+  Ex.: .cabecalho pega quem tem class="cabecalho".
+
+~ (irmão geral)
+  Pega um elemento DEPOIS do outro no mesmo nível.
+
+:checked
+  Quando o checkbox está marcado.
+
+!important
+  Força a regra a ganhar de outras (usar com cuidado).
+
+@import
+  Importa outro CSS (aqui: fonte do Google Fonts).
+
+
+TERMOS DE EFEITO NO ARQUIVO
+---------------------------
+sticky
+  Gruda no topo ao rolar a página.
+
+max-height: 0 + overflow: hidden
+  Menu fechado (altura zero, esconde o conteúdo).
+
+max-height: 500px
+  Menu aberto (libera altura).
+
+list-style: none
+  Tira as bolinhas da lista.
