@@ -406,8 +406,9 @@ footer {
 }
 
 .texto-sobre-nos {
+    color: white;  
     text-align: justify;
-    padding: 0.8rem;
+    padding: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
