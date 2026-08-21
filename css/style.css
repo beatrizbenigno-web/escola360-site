@@ -42,16 +42,6 @@ img {
   display: block;
 }
 
-/* Rodapé básico: fundo branco, texto centralizado
-   e "margin-top: auto" empurra ele para o final da página. */
-footer {
-  background-color: white;
-  color: rgb(3, 3, 90);
-  padding: 0.8rem;
-  text-align: center;
-  border-top: 1px solid rgba(235, 228, 228, 0.877);;
-  margin-top: auto;
-}
 
 
 /* ============================================================
@@ -233,14 +223,6 @@ footer {
   line-height: 1.7;
 }
 
-/* Ícone/link posicionado no canto superior direito da seção. */
-.icone-home {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  font-size: 1.6rem;
-  text-decoration: none;
-}
 
 /* Rótulo pequeno acima de um título (no caso, o nome "FUNCIONALIDADES"). */
 .rotulo {
@@ -273,10 +255,10 @@ footer {
    ------------------------------------------------------------ */
 
 .cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: clamp(1rem, 3vw, 1.5rem);
-  flex-wrap: wrap; /* se não couber, quebra para a linha de baixo */
-}
+ }
 
 .card {
   flex: 1;
@@ -370,7 +352,8 @@ footer {
 .campo-input {
   display: block;
   width: 100%;
-  height: 30px;
+  height: 44px;
+  font-size: 16px;
   box-sizing: border-box;
   padding: 0 12px;
   margin-top: 5px;
@@ -477,11 +460,7 @@ footer {
     font-size: clamp(1.5rem, 5vw, 2.2rem);
   }
 
-  /* Cards tendem a 2 colunas (quando usam grid) */
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
+ 
   .botao {
     font-size: 0.95rem;
   }
@@ -587,7 +566,7 @@ footer {
 
   /* Cards empilhados em uma coluna */
   .cards {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
@@ -623,16 +602,6 @@ footer {
     font-size: 0.85rem;
   }
 
-  .rodape {
-    padding: 1rem;
-  }
-
-  /* Ícone da home deixa de flutuar e vai para o fluxo normal */
-  .icone-home {
-    position: static;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-  }
 
 }
 
