@@ -3,6 +3,8 @@
 **Escola360** é uma plataforma web de acompanhamento escolar desenvolvida como componente curricular das disciplinas de Projeto Integrado e Desenvolvimento para a Web do curso de **Análise e Desenvolvimento de Sistemas (ADS)** da **Universidade Federal do Cariri (UFCA / UAB)**
 O sistema propõe-se a resolver os gargalos da comunicação fragmentada e do controle físico/manual nas instituições de ensino, atuando como um elo digital integrado e centralizado em tempo real para toda a comunidade escolar.
 
+- Acesse o site: https://beatrizbenigno-web.github.io/escola360-site/
+
 ---
 
 ## Objetivo do Projeto
