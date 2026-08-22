@@ -36,15 +36,17 @@
             <section class="login-section">
                 <div class="login-card">
                     <h2>Login</h2>
-                    <form action="dashboard.html" method="GET"> <!-- Alterar depois para POST -->
+                    <form action="dashboard.html" method="GET" id="form-login" novalidate> <!-- Alterar depois para POST -->
                     <div class="grupo-campo">
                         <label for="email">E-mail</label>
                         <input class="campo-input" type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        <small class="erro-campo" id="erro-email"></small>
                     </div>
                         
                     <div class="grupo-campo">
                         <label for="senha">Senha</label>
                         <input class="campo-input" type="password" id="senha" name="senha" placeholder="••••••••" required>
+                        <small class="erro-campo" id="erro-senha"></small>
                     </div>
                         
                     <div class="esqueceu-senha">
@@ -68,6 +70,7 @@
 
         </footer>
 
+        <script src="../js/script.js"></script>
     </body>
 
 </html>

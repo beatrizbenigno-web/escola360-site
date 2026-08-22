@@ -32,7 +32,96 @@
             
         </header>
         <main>
-            <h1> OPS! Página em Construção...</h1>
+            <section class="login-section">
+                <div class="login-card">
+                    <h2>Fale com o suporte</h2>
+
+                    <form action="#" method="post" id="form-suporte" novalidate>
+                        <div class="grupo-campo">    
+                            <label for="nome"> Nome completo</label>
+                            <input class="campo-input" type="text" id="nome" placeholder="Seu nome" required>
+                            <small class="erro-campo" id="erro-nome"></small>
+                        </div>
+
+                        <div class="grupo-campo">    
+                            <label for="email"> E-mail</label>
+                            <input class="campo-input" type="email" id="email" placeholder="seu@email.com" required>
+                            <small class="erro-campo" id="erro-email"></small>
+                        </div>
+
+                        <div class="grupo-campo">    
+                            <label for="assunto">Assunto</label>
+                            <select class="campo-input campo-select" id="assunto" name="assunto" required>
+                                <option value="">Selecione...</option>
+                                <option value="duvida">dúvida</option>
+                                <option value="problema">problema</option>
+                                <option value="sugestao">sugestão</option>
+                                <option value="outro">outro</option>
+                            </select>
+                            <small class="erro-campo" id="erro-assunto"></small>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea class="campo-textarea" id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+                            <small class="erro-campo" id="erro-mensagem"></small>
+                        </div>
+
+                        <button type="submit" class="botao-enviar">Enviar mensagem</button>
+
+
+                    </form>
+                    <div id="sucesso-mensagem" class="mensagem-sucesso" hidden>
+                        Mensagem enviada com sucesso! Em breve entraremos em contato.
+                    </div>
+
+                </div>
+
+
+            </section>
+            <section class="faq-section">
+                <h2>Perguntas Frequentes</h2>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-pergunta" aria-expanded="false">
+                        Como recupero minha senha?
+                        <span class="seta">▼</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Na tela de login, clique em "Esqueceu a senha?" e informe o e-mail cadastrado.
+                        Você receberá um link para criar uma nova senha em poucos minutos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-pergunta" aria-expanded="false">
+                        Onde consulto o boletim do meu filho?
+                        <span class="seta">▼</span>
+                    </button>
+
+                    <div class="faq-resposta">
+                        <p>Acesse sua conta como responsável e abra a área "Boletim Digital". Lá ficam
+                        disponíveis as notas, a frequência e o histórico completo por disciplina.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-pergunta" aria-expanded="false">
+                        Encontrei um problema na plataforma. E agora?
+                        <span class="seta">▼</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Preencha o formulário acima selecionando o assunto "problema" e descreva o 
+                            ocorrido. Nossa equipe responde em até 48 horas úteis.</p>
+                    </div>
+
+                </div>
+
+               
+            </section>
+
         </main>
 
         <footer class = "rodape">
@@ -40,6 +129,7 @@
 
         </footer>
 
+        <script src="../js/script.js"></script>
     </body>
 
 </html>

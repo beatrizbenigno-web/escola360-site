@@ -261,7 +261,6 @@ img {
  }
 
 .card {
-  flex: 1;
   background-color: #fff;
   min-width: 260px; /* não fica estreito demais */
   border: 1px solid #eaecf0;
@@ -605,6 +604,125 @@ footer {
 
 }
 
+
+/* ============================================================
+Formulário de Suporte
+ ============================================================*/
+/*Campo mensagem multilinhas*/
+ .campo-textarea{
+  display: block;
+  width: 100%;
+  min-height: 120px;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  margin-top: 5px;
+  resize: vertical;
+  font-family: inherit;
+
+}
+
+/*Botao de enviar*/
+.botao-enviar{
+  display: block;
+  width: 100%;
+  background-color: #16305c;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: 
+  transition: all 0.2s ease;
+}
+.botao-enviar:hover{
+  background-color: #1d3f78;
+}
+
+/*Erros*/
+.erro-campo{
+  display: none;
+  color: #d93025;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+.erro-campo.visivel{
+  display: block;
+}
+
+.campo-input.campo-invalido,
+.campo-textarea.campo-invalido{
+  border: 2px solid #d93025;
+}
+
+/* Confirmação */
+.mensagem-sucesso{
+  background-color: #e6f4ea;
+  color: #1e7e34;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+/*FAQ*/
+.faq-section{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 4rem) 1rem;
+}
+
+.faq-section h2{
+  color: white;
+  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  margin-bottom: 1.5rem;
+}
+
+.faq-item{
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.faq-pergunta{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(3,3,90);
+  text-align: left;
+}
+
+.faq-resposta{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.aberta .faq-resposta{
+  max-height: 300px;
+}
+
+.faq-item.aberta .seta{
+  transform: rotate(180deg);
+}
+
+.seta{
+  transition: transform 0.3s ease;
+}
+
+.faq-resposta p {
+  padding: 0 1rem 1rem;
+  color: #667085;
+}
 
 /* ============================================================
    ACESSIBILIDADE — MOVIMENTO REDUZIDO
